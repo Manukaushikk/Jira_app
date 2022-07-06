@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Slab:wght@300&display=swap');
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 5rem;
+    background-color: #222f3e;
+    display: flex;
+    align-items: center;
+}
+
+.color-pallete {
+    background-color: #1e272e;
+    width: 21%;
+    display: flex;
+    height: 72%;
+    margin-right: 3rem;
+    margin-left: 5rem;
+    border-radius: 7px;
+}
+
+.color-boxes {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+
+.color {
+    height: 61%;
+    border-radius: 10px;
+    width: 47%;
+}
+
+.orange {
+    background-color: #ff7f50;
+}
+
+.blue {
+    background-color: #0984e3;
+}
+
+.pink {
+    background-color: #fd79a8;
+}
+
+.green {
+    background-color: #55efc4;
+}
+
+
+/* Options */
+
+.clicked {
+    background-color: #0f1113;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+
+.options {
+    width: 8%;
+    height: 70%;
+    background-color: #1e272e;
+    border-radius: 7px;
+    margin-left: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add.btn {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete.btn {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* LOCKS */
+
+.lock {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.unlock {
+    height: 100%;
+    width: 50%;
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* Main Content */
+
+.main {
+    /*Min-height is used when content increase the height also increases*/
+    min-height: 90vh;
+    background-color: rgb(207, 166, 166);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    height: 10rem;
+    width: 16rem;
+    /* margin-top: 10rem; */
+    /* margin-left: 10rem; */
+}
+
+.ticket-header {
+    height: 9%;
+    color: #55efc4;
+}
+
+.ticket-content {
+    height: 94%;
+}
+
+.ticket-id {
+    height: 20%;
+    font-weight: bolder;
+    background-color: white;
+    color: #989393;
+    padding-top: 1px;
+    padding-left: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    height: 76%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 7px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    /* line-height => TWO line ka beech ki spacing */
+    line-height: 145%;
+    /* letter-spacing => letter ka beech ka spaceing */
+    letter-spacing: 1.5px;
+}
+
+
+/* modal */
+
+.modal {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 18rem;
+    width: 35rem;
+    background: white;
+    position: fixed;
+    top: 10rem;
+    /* to place an element in horizontal center using position  */
+    left: calc((100vw - 35rem) / 2);
+    display: flex;
+}
+
+.contentarea {
+    width: 70%;
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.pallet_container {
+    height: 100%;
+    width: 30%;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    /* column wise  */
+    flex-direction: column;
+    /* verically*/
+    justify-content: space-evenly;
+    /* horizontal center  */
+    align-items: center;
+}
+
+.pallet_color {
+    height: 15%;
+    width: 60%;
+    border-radius: 2px;
+}
